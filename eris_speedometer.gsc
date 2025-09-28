@@ -20,9 +20,8 @@ onPlayerConnect()
 
 onSpawned()
 {
-    self waittill( "spawned_player" );
     self endon("game_ended");
-    self iprintln("^8[^3Speedometerr^8][^5" + "^8]^7 github.com/Erisrine/t6-speedometer");
+    self iprintln("^6Speedometer:^8" + "^7 github.com/Erisrine/t6-speedometer");
     self.minSpeed = 0;
     self.maxSpeed = 400;
 
@@ -43,7 +42,7 @@ speedometer()
     hud.aligny = "center";
     hud.horzalign = "right"; 
     hud.vertalign = "center";
-    hud.x = 10; 
+    hud.x = 20; 
     hud.y = 300;
     hud.fontscale = 1.8;
     hud.alpha = 1;
